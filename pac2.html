@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PAC2 - Arnau Rigol</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+</head>
+
+<style>
+    img {
+        margin-bottom: 1em;
+        max-width: 100%;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>PAC2</h1>
+        <h3>Arnau Rigol Carrasco</h3>
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Exercici 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Exercici 2</button>
+            </li>
+          </ul>
+        <div class="tab-content" id="pills-tabContent" style="max-width: 800px;">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <h5>Tasca 1.1</h5>
+                <p>Com que està destinat a ser visualitzat per web, he configurat un bitrate de 2Mbs, perquè sigui adequat el seu ús des de navegadors.</p>
+                <div class="d-flex justify-content-center"><img src="img/exercici1/tasca1_1-img1.png"/></div>
+                <p>Per altra banda he deixat una mida del vídeo adaptada a la mida que s’ha de veure des de la pàgina web. En aquest cas és un vídeo vertical. S’ha configurat la següent mida:</p>
+                <div class="d-flex justify-content-center"><img src="img/exercici1/tasca1_1-img2.png"/></div>
+                <p>El format webm és adequat per utilitzar-lo en pàgines web, tot i això no tots els navegadors el suporten. Per tant es codificarà en dos còdecs diferents per a optimitzar el seu ús en diferents navegadors:</p>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-end"><img src="img/exercici1/tasca1_1-img3.png"/></div>
+                    <div class="col-6 d-flex justify-content-start"><img src="img/exercici1/tasca1_1-img4.png"/></div>
+                </div>
+                <p>Fitxer webm (video: VP9, audio: Vorbis)</p>
+                <div class="d-flex justify-content-center"><img src="img/exercici1/tasca1_1-img5.png"/></div>
+                <p>Fitxer mp4 (video: AVC, audio: ACC)</p>
+                <div class="d-flex justify-content-center"><img src="img/exercici1/tasca1_1-img6.png"/></div>
+                <h5>Tasca 1.2</h5>
+                <p>Utilitza el sistema de baixada progressiva. Això permet anar veient el contingut del vídeo un cop s'han baixat una part suficient de dades. El protocol opera sobre HTTP fent servir TCP. Aquest tipus de model suposa una millora respecte al model de vídeo incrustat, on s'havia de baixar el contingut complert del vídeo per a poder-lo visualitzar.</p>
+                <p>Per altra banda, respecte al model de streaming, en la baixada progressiva, s'ha de guardar el fitxer en memòria per a poder ser visualitzat. En la transmissió a temps real no és necessari. També la transmissió en streaming adapta la quantitat de dades transmeses a l'amplada de banda del client demanant el vídeo. En la baixada progressiva, això no és possible: tots els clients utilitzen l'amplada de banda que disposi el servidor.</p>
+                <h5>Tasca 1.3</h5>
+                <p>He utilitzat el host que proporciona github de manera gratuïta:</p>
+                <div class="d-flex justify-content-center"><img src="img/exercici1/tasca1_3-img1.png"/></div>
+                <h5>Tasca 1.4</h5>
+                <a class="btn btn-link" href="video.html" role="button">Enllaç vídeo</a>
+                <p>Proves realitzades:</p>
+                <ul>
+                    <li>He afegit una màxima amplada del 100% perquè s'adapti a la mida de la pantalla en cas que sigui més petita que l'amplada del vídeo.</li>
+                    <li>L'hi he afegit una imatge de mostra (poster) perquè es pugui veure de què tracta el vídeo en cas que no hagi baixat res d'informació.</li>
+                    <li>L'hi he afegit l'atribut loop perquè torni a començar el vídeo un cop acaba (que es comporti com un gif)</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <h5>Tasca 2.1</h5>
+                <p>En aquest segon exercici, s’ha utilitzat el mateix fitxer de vídeo base que en el primer exercici.
+                    S’ha generat el fitxer amb les característiques especificades. Amb MediaInfo es poden veure les següents característiques:</p>
+                <div class="d-flex justify-content-center"><img src="img/exercici2/tasca2_1-img1.png"/></div>
+                
+                <h5>Tasca 2.2</h5>
+                <p>Emissor:</p>
+                    <p>Els còdecs utilitzats són:</p>
+                    <ul>
+                        <li>Vídeo: H264 – MPEG-4 AVC (part 10) (avc1)</li>
+                        <li>Àudio: MPEG Audio layer 1/2/3 (mpga)</li>
+                    </ul>
+                    <p>La taxa de bits és molt variable. Està entre valors de 2mb/s i 10 mb/s. Es podria dir que la mitjana està al voltant dels 5mb/s.</p>
+                    <div class="d-flex justify-content-center"><img src="img/exercici2/tasca2_2-img1.png"/></div>
+                
+                    <h5>Tasca 2.3</h5>
+                <p>Receptor:</p>
+                    <p>Els còdecs utilitzats són:</p>
+                    <ul>
+                        <li>Vídeo: H264 – MPEG-4 AVC (part 10) (h264)</li>
+                        <li>Àudio:  MPEG Audio layer 1/2/3 (mpga)</li>
+                    </ul>
+                    <p>La taxa de bits és molt variable similar al cas de l’emissor. Està entre valors de 1mb/s i 10 mb/s. Es podria dir que la mitjana està al voltant dels 5mb/s.</p>
+                    <div class="d-flex justify-content-center"><img src="img/exercici2/tasca2_3-img1.png"/></div>
+                
+                    <h5>Tasca 2.4</h5>
+                <p>En general el vídeo per si mateix no es reprodueix de forma fluida. Es veu com entretallat. Sobretot quan la imatge té molta variació / moviment. Entenc que l'equip no té prou capacitat de càlcul.</p>
+                <p>En aturar el vídeo, triga uns 2 segons a reaccionar. Això és perquè aquesta porció de dades (entre que s'acciona la pausa a l'emissor i s'atura el receptor) ja ha estat enviada i per tant es visualitza en el receptor. Quan es torna a posar en marxa, la imatge triga uns 5 segons a tornar-se a estabilitzar i es veu distorsionada, molt granulada:</p>
+                <div class="d-flex justify-content-center"><img src="img/exercici2/tasca2_4-img1.png"/></div>
+                
+                <h5>Tasca 2.5</h5>
+                <p>El VLC d’emissió està enviant el fitxer amb la mateixa codificació que el fitxer emmagatzemat, per tant no està realitzant una compressió de les dades. </p>
+                <div class="d-flex justify-content-center"><img src="img/exercici2/tasca2_5-img1.png"/></div>
+                
+                <h5>Tasca 2.6</h5>
+                <p>Tant el vídeo com l'àudio es tallen. Pràcticament no es veu moviment, només imatges estàtiques. És degut al fet que l'equip no és capaç de realitzar els càlculs de codificació i descodificació amb prou rapidesa, de manera que es pugui veure el vídeo.</p>                
+                
+                <h5>Tasca 2.7</h5>
+                <p>La imatge es veu més granulada. Com més es baixa la velocitat, més es veuen els píxels a la imatge i es redueix el detall.</p>
+                <p>Velocitat vídeo: 2000kbps</p>
+                <img src="img/exercici2/tasca2_7-img1.png"/>
+                <p>Velocitat vídeo: 500kbps</p>
+                <img src="img/exercici2/tasca2_7-img2.png"/>
+                <p>Velocitat vídeo: 200kbps</p>
+                <img src="img/exercici2/tasca2_7-img3.png"/>
+
+                <h5>Tasca 2.8</h5>
+                <p>Quan es retrocedeix o avança en l'emissor, primer la imatge al receptor continua emetent-se durant uns dos segons. Després s'atura i triga uns dos segons a tornar a arrancar. Quan ho fa, la imatge està distorsionada, de manera que es barregen la imatge on s'havia quedat aturada amb les noves imatges que es reben.</p>
+                <p>No reacciona de manera immediata perquè l'emissor abans d'aturar-se ja havia enviat una part de dades posteriors al punt d'aturada, de manera que aquestes són rebudes al receptor.</p>
+                <p>Això és a causa que els fotogrames tipus B i P, es basen en els canvis respecte a fotogrames anteriors. És necessari un fotograma tipus I com a base per definir els canvis. Com que quan s'avança o retrocedeix el vídeo, no sempre quadra amb un fotograma tipus I, els fotogrames tipus B i P no poden definir correctament la imatge per si sols, de manera que es barregen la imatge anterior al canvi amb les modificacions dels quadres tipus B i P.</p>
+                <p>Aquesta distorsió es pot veure en la següent imatge:</p>
+                <div class="d-flex justify-content-center"><img src="img/exercici2/tasca2_8-img1.png"/></div>
+
+                <h5>Tasca 2.9</h5>
+                <p>No he aconseguit emetre el vídeo en format HEVC des de l'equip que he dut a terme les tasques anteriors. El VLC emissor comença l'emissió, però al receptor no arriba el vídeo i al cap d'uns segons es tanca el programa automàticament.</p>
+                <p>He decidit realitzar l'exercici en un altre equip amb el sistema operatiu Ubuntu. Aquest equip té menys potència i no s'acaba de visualitzar el vídeo correctament en cap de les velocitats 2000 kbps, 500 kbps i 200 kbps. El vídeo es veu tallat i només es veuen algunes imatges al llarg del temps que dura.</p>
+                <p>Sí que es veu certa menys qualitat en les imatges, en reduir la quantitat de dades transmeses. No es pot valorar com reacciona en avançar o endarrerir el vídeo.</p>
+                Codificacions de l’emissor i el receptor:
+                <img src="img/exercici2/tasca2_9-img1.png"/>
+                <p>Velocitat vídeo: 2000kbps</p>
+                <img src="img/exercici2/tasca2_9-img2.png"/>
+                <p>Velocitat vídeo: 500kbps</p>
+                <img src="img/exercici2/tasca2_9-img3.png"/>
+                <p>Velocitat vídeo: 200kbps</p>
+                <img src="img/exercici2/tasca2_9-img4.png"/>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
